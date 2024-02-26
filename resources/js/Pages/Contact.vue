@@ -24,25 +24,25 @@ const submit = () => {
 </script>
 
 <template>
-    <Head title="Tentang Kami" />
+    <Head title="Hubungi Kami" />
 
     <PageLayout>
-        <div class="container mx-auto">
+        <div class="pb-10">
             <div class="pt-10 pb-4">
                 <h1 class="text-center font-bold text-4xl text-gray-600">Hubungi Kami</h1>
             </div>
 
             <div class="flex flex-col-reverse md:flex-row">
-                <div class="bg-red-400 text-white w-full md:w-2/5 px-7 py-6">
+                <div class="bg-red-950 text-white w-full md:w-2/5 px-7 py-6">
                     <div class="mb-2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.087951467459!2d106.84415889126572!3d-6.19171767518356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f579790eb949%3A0xfc2b7892517a7da9!2sArpan%20Electric!5e0!3m2!1sid!2sid!4v1707061113489!5m2!1sid!2sid" width="800" height="600" style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.087951467459!2d106.84415889126572!3d-6.19171767518356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f579790eb949%3A0xfc2b7892517a7da9!2sArpan%20Electric!5e0!3m2!1sid!2sid!4v1707061113489!5m2!1sid!2sid" width="800" height="800" style="border:0; width: 100%;" class="h-96" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <table class="text-left">
                         <tr class="align-top">
                             <th>Nomor Hp.</th>
                             <td class="px-4">:</td>
                             <td>
-                                <ul>
+                                <ul class="mb-2">
                                     <li><a href="tel:+62812-8743-0066" class="hover:underline underline-offset-2">0812-8743-0066</a></li>
                                     <li><a href="tel:+622129923166" class="hover:underline underline-offset-2">(021) 29923166</a></li>
                                 </ul>
@@ -51,6 +51,11 @@ const submit = () => {
                         <tr>
                             <th>Marketplace</th>
                             <td class="px-4">:</td>
+                            <td>
+                                <ul>
+                                    <li><a href="https://tokopedia.link/ggRmvcDisHb" class="hover:underline underline-offset-2" target="_blank" rel="noopener noreferrer">Tokopedia</a></li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr></tr>
                     </table>
@@ -89,7 +94,7 @@ const submit = () => {
                                 </div>
 
                                 <div>
-                                    <button type="submit" class="rounded bg-gray-500 text-white shadow px-2 py-1">Submit</button>
+                                    <button type="submit" class="rounded bg-red-500 text-white shadow px-2 py-1">Submit</button>
                                 </div>
                             </div>
                         </form>

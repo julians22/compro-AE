@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +21,13 @@ use Inertia\Inertia;
 
 Route::get('/', [HomeController::class, 'index'])
     ->name('welcome');
+
+Route::group(['prefix' => 'product', 'as' => 'product.'], function() {
+    Route::get('/{category?}', [ProductController::class, 'index'])
+        ->name('index');
+});
+
+
 Route::get('/contact-us', [ContactController::class, 'index'])
     ->name('contact-us');
 Route::post('/contact-us', [ContactController::class, 'store'])

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Meta;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -10,6 +11,10 @@ use Inertia\Inertia;
 class ContactController extends Controller
 {
     function index() {
+
+        Meta::addMeta('title', 'Hubungi Kami - Arpan Electric');
+        Meta::addMeta('description', 'Yuk, Temukan Solusi Elektronik Terbaik di Arpan Electric! Cari barang elektronik yang berkualitas? Datang aja ke Arpan Electric Kami punya banyak pilihan, lho!');
+
         return Inertia::render('Contact');
     }
 
